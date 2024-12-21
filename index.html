@@ -1,0 +1,211 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Adidas Store</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+    <header>  
+        <nav class="navbar"> <img src="pngwing.com (1).png" alt="Зургийн тайлбар" class="rounded-image">
+            <h1 class="h11">Adidas</h1>  
+            <ul class="nav-links">  
+                <li><a href="#home">Home</a></li>  
+                <li><a href="#products">shopping</a></li>  
+            </ul>  
+            <input type="text" id="search-bar" placeholder="Search products..." oninput="filterProducts()">  
+        </nav>  
+    </header>  
+
+    <main>  
+        <section id="products" class="container">  
+            <div class="product" onclick="showProductDetails('samba-jeans')">  
+                <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/05c68ce43ff04cb9b46a417b727d923d_9366/Gazelle_Bold_Shoes_Blue_JQ5144_01_standard.jpg" alt=samba jeans">  
+                <h3>Samba Jeans</h3>  
+                <p>deep blue with thick soles</p>  
+                <p class="rating">⭐⭐⭐⭐☆</p>  
+                <p>$120</p>  
+                <button class="order-button">Order</button>  
+            </div>  
+            <div class="product" onclick="showProductDetails('samba-blue')">  
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3ccba8f349d44d3db769c6c8443280be_9366/Gazelle_Shoes_Blue_JH7219_01_standard.jpg" alt="Samba Blue">  
+                <h3>Samba Blue</h3>  
+                <p>Blue and Pink</p>  
+                <p class="rating">⭐⭐⭐⭐☆</p>  
+                <p>$130</p>  
+                <button class="order-button">Order</button>  
+            </div>  
+            <div class="product" onclick="showProductDetails('samba-grey')">  
+                <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ab73afca77724ed682dd2e46780fda44_9366/Samba_OG_Shoes_Grey_JI3212_01_00_standard.jpg" alt="samba grey">  
+                <h3>Samba grey</h3>  
+                <p>Deep grey summer collection</p>  
+                <p class="rating">⭐⭐⭐⭐☆</p>  
+                <p>$120</p>  
+                <button class="order-button">Order</button>  
+            </div> 
+            <div class="product" onclick="showProductDetails('campus')">  
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/85e1879ead9848c0a3e77475f422f8c0_9366/Campus_00s_Shoes_Black_ID3171_01_standard.jpg" alt="Samba Red">  
+                <h3>Campus</h3>  
+                <p>Black and pink summer collection</p>  
+                <p class="rating">⭐⭐⭐⭐☆</p>  
+                <p>$120</p>  
+                <button class="order-button">Order</button>  
+            </div> 
+            <div class="product" onclick="showProductDetails('samba-red')">  
+                <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/d8e62bc2341c4e9fac60b9684f5a7448_9366/Gazelle_Indoor_Shoes_Red_JI2756_01_standard.jpg" alt="Samba Red">  
+                <h3>Samba Red</h3>  
+                <p>Red and Pink</p>  
+                <p class="rating">⭐⭐⭐⭐☆</p>  
+                <p>$120</p>  
+                <button class="order-button">Order</button>  
+            </div> 
+            <div class="product" onclick="showProductDetails('samba-pink-and-yellow')">  
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8679bd0ca9cd41858ec1887d562b193d_9366/Gazelle_Shoes_Purple_JI1373_01_standard.jpg" alt="Samba Red">  
+                <h3>Samba pink and yellow</h3>  
+                <p>Pink and yellow summer collection</p>  
+                <p class="rating">⭐⭐⭐⭐☆</p>  
+                <p>$120</p>  
+                <button class="order-button">Order</button>  
+            </div> 
+            <div class="product" onclick="showProductDetails('samba-blues')">  
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/18d93cc2854e4938afb9b3381e2b7350_9366/Handball_Spezial_Shoes_Blue_IH7952_01_standard.jpg" alt="Samba Red">  
+                <h3>Samba Blues</h3>  
+                <p>Oranges blue limited edition</p>  
+                <p class="rating">⭐⭐⭐⭐☆</p>  
+                <p>$120</p>  
+                <button class="order-button">Order</button>  
+            </div> 
+            <div class="product" onclick="showProductDetails('samba')">  
+                <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ed5307be61d14b9ea388561724b146ca_9366/Gazelle_Shoes_Pink_ID7006_01_00_standard.jpg" alt="Samba Red">  
+                <h3>Samba</h3>  
+                <p>Blonde summer collection</p>  
+                <p class="rating">⭐⭐⭐⭐☆</p>  
+                <p>$120</p>  
+                <button class="order-button">Order</button>  
+            </div> 
+            <div class="product" onclick="showProductDetails('campus-blue')">  
+                <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/9bc3ca94e7d14c65a5c296fae93f6d5c_9366/Campus_00s_Shoes_Blue_JI2005_01_standard.jpg" alt="Samba Red">  
+                <h3>Campus</h3>  
+                <p>ocean summer collection</p>  
+                <p class="rating">⭐⭐⭐⭐☆</p>  
+                <p>$120</p>  
+                <button class="order-button">Order</button>  
+            </div>
+        </div> 
+        <div class="product" onclick="showProductDetails('campus-forest')">  
+                <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/6cdd33c339154a90b10983ec0c9fc918_9366/Campus_00s_Shoes_Turquoise_ID1437_01_standard.jpg" alt="Samba Red">  
+                <h3>Campus</h3>  
+                <p>forest green summer collection</p>  
+                <p class="rating">⭐⭐⭐⭐☆</p>  
+                <p>$120</p>  
+                <button class="order-button">Order</button>  
+            </div>
+        </div>
+         <div class="product" onclick="showProductDetails('campus-oranges')">  
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/558a7f91c9f0463a92b119b021075075_9366/Gazelle_Bold_Shoes_Turquoise_IG4386_01_standard.jpg" alt="Samba Red">  
+            <h3>Campus</h3>  
+            <p>Oranges green summer collection</p>  
+            <p class="rating">⭐⭐⭐⭐☆</p>  
+            <p>$120</p>  
+            <button class="order-button">Order</button>  
+        </div>
+    </div> 
+    <div class="product" onclick="showProductDetails('samba-summer')">  
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/54e526a6e3cb4b1caf8974acd0ceb490_9366/Samba_OG_Shoes_Green_JI2681_01_00_standard.jpg" alt="Samba Red">  
+        <h3>Samba</h3>  
+        <p>summer collection</p>  
+        <p class="rating">⭐⭐⭐⭐☆</p>  
+        <p>$120</p>  
+        <button class="order-button">Order</button>  
+    </div>
+</div> 
+<div class="product" onclick="showProductDetails('campus-brown')">  
+    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ed8cf954510b401eafd98d13b1dbed76_9366/Campus_00s_Shoes_Black_JH8998_01_standard.jpg" alt="Samba Red">  
+    <h3>Campus Brown</h3>  
+    <p>Deep brown summer collection</p>  
+    <p class="rating">⭐⭐⭐⭐☆</p>  
+    <p>$120</p>  
+    <button class="order-button">Order</button>  
+</div>
+</div> 
+<div class="product" onclick="showProductDetails('ultra-boost')">  
+    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e05ab9bfc6bd450bb4a7afe5160d73c5_9366/Runfalcon_5_Running_Shoes_White_IE8818_01_standard.jpg" alt="Samba Red">  
+    <h3>UltraBoost Running</h3>  
+    <p>White summer collection</p>  
+    <p class="rating">⭐⭐⭐⭐☆</p>  
+    <p>$120</p>  
+    <button class="order-button">Order</button>  
+</div>
+</div> 
+<div class="product" onclick="showProductDetails('forum-blue')">  
+    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/57f1889968a04e98912328438ebeb396_9366/Forum_Low_CL_Shoes_White_IH7913_01_standard.jpg" alt="Samba Red">  
+    <h3>Forum blue</h3>  
+    <p>Blue summer collection</p>  
+    <p class="rating">⭐⭐⭐⭐☆</p>  
+    <p>$120</p>  
+    <button class="order-button">Order</button>  
+</div>
+
+<div class="product" onclick="showProductDetails('samba-blue-and-yellow')">  
+    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/79e58d33c69848d5b6cbe29424aaf2ee_9366/Handball_Spezial_Shoes_Blue_IG6276_01_standard.jpg" alt="Samba Red">  
+    <h3>Samba</h3>  
+    <p>Blue and yellow summer collection</p>  
+    <p class="rating">⭐⭐⭐⭐☆</p>  
+    <p>$120</p>  
+    <button class="order-button">Order</button>  
+</div>
+
+<div class="product" onclick="showProductDetails('samba-pink')">  
+ <div>  
+    <div>
+        
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c6c7c78972df4a0e9dd14bc1b5098de7_9366/Handball_Spezial_Shoes_Red_IG6275_01_standard.jpg" alt="Samba Red">  
+    </div>
+    <div>
+        <h3>Samba Pink</h3>  
+        <p>Women's summer collection</p>  
+        <p class="rating">⭐⭐⭐⭐☆</p>  
+        <p>$120</p>  
+        <button class="order-button">Order</button> 
+    </div> 
+</div>
+
+    
+</div>
+<div class="product" onclick="showProductDetails('campus-black-brown')">  
+    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5099d9871f314e028c3d02ccbfa981d1_9366/Campus_00s_Shoes_Grey_IH8071_01_standard.jpg" alt="Samba Red">  
+    <h3>Campus</h3>  
+    <p>black brown summer collection</p>  
+    <p class="rating">⭐⭐⭐⭐☆</p>  
+    <p>$120</p>  
+    <button class="order-button">Order</button>  
+</div>
+            <!-- Add more products as needed -->  
+        </section>  
+
+        <div id="product-details" class="hidden">  
+            <button id="close-button" onclick="closeDetails()" >X</button>  
+            <img id="details-image" src="" alt="">  
+          <div id="bosoo"> 
+             <h2 id="details-title"></h2>  
+             <p id="details-description"></p>  
+             <p id="details-price"></p> 
+             <p id="details-social"></p> 
+             <button class="order-button">Order this product</button>
+        </div>
+        </div>
+    </main>  
+
+    <footer>  
+        <p>&copy; 2024 Adidas Store. All rights reserved.</p>  
+        <div class="social-icons">  
+            <a href="#"><img src="logo-facebook.svg" alt="Facebook"></a>  
+            <a href="#"><img src="logo-twitter.svg" alt="Twitter"></a>  
+            <a href="#"><img src="logo-instagram.svg" alt="Instagram"></a>  
+        </div>  
+    </footer>  
+
+    <script src="./script.js"></script>  
+</body>  
+</html>
